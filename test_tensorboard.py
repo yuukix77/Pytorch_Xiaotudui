@@ -24,6 +24,4 @@ img_array2 = np.array(img2)
 print(img_array2.shape)
 writer.add_image("Image1",img_array2,2,dataformats='HWC')
 
-
-
 writer.close()
