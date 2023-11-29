@@ -152,7 +152,7 @@ for i in range(epoch):
     total_test_step = total_test_step + 1
 
     #保存模型：每一个epoch都保存一个
-    torch.save(tudui, "whole_train_tudui_{}".format(i+1))
+    torch.save(tudui, "whole_train_tudui_{}.pth".format(i+1))
     #torch.save(tudui.state_dict(), "whole_train_tudui_{}".format(i+1)) 保存方式2
     print("第{}轮模型已保存".format(i+1))
 writer.close()
