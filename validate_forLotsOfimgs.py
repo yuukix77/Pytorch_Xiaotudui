@@ -10,8 +10,9 @@ import os
 #返回该文件夹下所有的文件、文件夹名
 print("---------确认图片路径------------")
 image_path = []
-for filename in os.listdir("imgs"):
-    image_path.append("imgs/"+filename)
+image_dir = "imgs"
+for filename in os.listdir(image_dir):
+    image_path.append(image_dir+"/"+filename)
 print(image_path)
 print("---------确认图片路径------------")
 
